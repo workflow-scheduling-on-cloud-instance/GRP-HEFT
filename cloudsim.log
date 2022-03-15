@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-03-12T20:29:55</date>
+  <millis>1552409995479</millis>
+  <sequence>1</sequence>
+  <logger>org.cloudbus.cloudsim</logger>
+  <level>INFO</level>
+  <class>org.cloudbus.spotsim.main.config.Config</class>
+  <method>load</method>
+  <thread>1</thread>
+  <message>Loading properties: {}</message>
+</record>
+<record>
+  <date>2019-03-12T20:29:55</date>
+  <millis>1552409995480</millis>
+  <sequence>2</sequence>
+  <logger>org.cloudbus.cloudsim</logger>
+  <level>INFO</level>
+  <class>org.cloudbus.spotsim.main.config.Config</class>
+  <method>load</method>
+  <thread>1</thread>
+  <message>Logger new level is: INFO</message>
+</record>
+<record>
+  <date>2019-03-12T20:31:10</date>
+  <millis>1552410070344</millis>
+  <sequence>21</sequence>
+  <logger>org.cloudbus.cloudsim</logger>
+  <level>INFO</level>
+  <class>org.optframework.core.pacsa.PACSAIterationNumber</class>
+  <method>runAlgorithm</method>
+  <thread>1</thread>
+  <message>List of ants' fitness:364.0, 354.0, 350.0, 355.0, 359.0, 349.0, 365.0, 356.0, </message>
+</record>
+<record>
+  <date>2019-03-12T20:31:10</date>
+  <millis>1552410070345</millis>
+  <sequence>22</sequence>
+  <logger>org.cloudbus.cloudsim</logger>
+  <level>INFO</level>
+  <class>org.optframework.core.pacsa.PACSAIterationNumber</class>
+  <method>runAlgorithm</method>
+  <thread>1</thread>
+  <message>BestCurrentFitness:349.0 found in iter:1</message>
+</record>
+<record>
+  <date>2019-03-12T20:31:10</date>
+  <millis>1552410070345</millis>
+  <sequence>23</sequence>
+  <logger>org.cloudbus.cloudsim</logger>
+  <level>INFO</level>
+  <class>org.optframework.core.pacsa.PACSAIterationNumber</class>
+  <method>runAlgorithm</method>
+  <thread>1</thread>
+  <message>GeneralBestFitness:349.0 found in iter:1</message>
+</record>
+<record>
+  <date>2019-03-12T20:31:10</date>
+  <millis>1552410070598</millis>
+  <sequence>24</sequence>
+  <logger>org.cloudbus.cloudsim</logger>
+  <level>INFO</level>
+  <class>org.optframework.core.pacsa.PACSAIterationNumber</class>
+  <method>runAlgorithm</method>
+  <thread>1</thread>
+  <message>List of newborn ants' fitness:586.0, 566.0, 495.0, 689.0, 479.0, 533.0, 602.0, 721.0, </message>
+</record>
+<record>
+  <date>2019-03-12T20:31:10</date>
+  <millis>1552410070598</millis>
+  <sequence>25</sequence>
+  <logger>org.cloudbus.cloudsim</logger>
+  <level>INFO</level>
+  <class>org.optframework.core.pacsa.PACSAIterationNumber</class>
+  <method>runAlgorithm</method>
+  <thread>1</thread>
+  <message>------------------End of iteration 1 --------------------</message>
+</record>
+<record>
+  <date>2019-03-12T20:31:10</date>
+  <millis>1552410070599</millis>
+  <sequence>26</sequence>
+  <logger>org.cloudbus.cloudsim</logger>
+  <level>INFO</level>
+  <class>org.optframework.core.pacsa.PACSAIterationNumber</class>
+  <method>runAlgorithm</method>
+  <thread>1</thread>
+  <message>The best solution in PACSA founded in iteration:1
+</message>
+</record>
+</log>

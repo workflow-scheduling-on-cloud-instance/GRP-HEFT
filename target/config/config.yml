@@ -1,0 +1,88 @@
+# to run different optimization algorithms change the 'algorithm' field in global setting
+#
+#========================================================================================
+#============================= ALGORITHM DESCRIPTION TABLE ==============================
+#========================================================================================
+# Value             Description
+#----------------------------------------------------------------------------------------
+# sa                Simulated annealing algorithm
+# hbmo              HoneyBee mating optimization algorithm with random initial solution
+# heft              Heterogeneous Earliest Finish Time algorithm that uses all best instances with a limited number of instances
+# heft-example      The customized HEFT algorithm for the example in the HEFT paper
+# pacsa             Parallel Ant Colony leveraged by Simulated Annealing
+# pacsa-plus        PACSA algorithm with computed M number
+# pso               Particle Swarm Intelligence
+# zpso              PSO algorithm with z array
+#
+# Key NOTES:
+# - The type of the workflow that the selected algorithm uses to run, is specified through the workflow ID (e.g workflow_id: 3 is the Inspiral 50)
+# - All of the algorithm's fitness are based on the HEFT algorithm
+# - Number of runs for the heft-before-hbmo algorithm is specified in hbmo section of the config
+#
+
+
+global:
+  algorithm: "pacsa-plus"
+  workflow_id: 4
+  #algorithm: "hbmo"
+  #workflow_id: 4
+  #workflow_name: "inspiral_30"
+  budget: 1.463
+  bandwidth: 39321600
+  t_extra: -1
+  read_m_number_from_config: no
+#  M number: maximum number of instances used during workflow scheduling
+  m_number: 50
+  initial_solution_from_heft_id: 0
+  use_mysql_to_log: no
+  mysql_username: "hessamdb"
+  mysql_password: "He$123456789"
+  connection_string: "jdbc:mysql://localhost:3306/optdb"
+  deadline_based: no
+  deadline: 37.50
+
+sa_algorithm:
+  start_temperature: 85
+  final_temperature: 0.01
+  cooling_factor: 0.999
+  force_cooling: yes
+  equilibrium_point: 10
+  number_of_runs: 48
+
+honeybee_algorithm:
+  max_speed: 800
+  min_speed: 0.1
+  force_speed: no
+  sMin_division: 20000
+  sMax_division: 5
+  cooling_factor: 0.95
+  number_of_threads: 4
+  spermatheca_size: 2000
+# the generation number equals to number of iterations
+  generation_number: 220
+  neighborhood_ratio: 0.0
+  number_of_runs: 1
+# this toggle is used to switch between single mutation or mutation on every brood
+  full_mutation: no
+
+pacsa_algorithm:
+  iteration_number: 20
+  iteration_number_based: yes
+  number_of_ants: 16
+  number_of_runs: 1
+#  cf: cooling factor (previous value 1.004)
+  cf_increase_ratio: 1.002
+# temp_decrease_ratio: intensification rate (previous value 0.95)
+  temp_decrease_ratio: 0.95
+  equilibrium_point: 0.99
+  evaporation_factor: 0.2
+  global_based: yes
+  insert_heft_initial_solution: yes
+
+pso_algorithm:
+  number_of_runs: 5
+  number_of_particles: 700
+  maximum_iteration: 2000
+  weight: 0.9
+  acceleration_coefficient1: 1.2
+  acceleration_coefficient2: 1.2

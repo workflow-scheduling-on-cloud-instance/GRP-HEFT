@@ -1,0 +1,54 @@
+global:
+  algorithm: pacsa-plus
+  bandwidth: 39321600
+  budget: 23.01
+  connection_string: jdbc:mysql://localhost:3306/optdb
+  deadline: 37.5
+  deadline_based: false
+  initial_solution_from_heft_id: 0
+  m_number: 250
+  mysql_password: He$123456789
+  mysql_username: hessamdb
+  read_m_number_from_config: true
+  t_extra: -1
+  use_mysql_to_log: false
+  workflow_id: 40
+  workflow_name: cybershake_1000
+honeybee_algorithm:
+  cooling_factor: 0.95
+  force_speed: false
+  full_mutation: false
+  generation_number: 220
+  max_speed: 800
+  min_speed: 0.1
+  neighborhood_ratio: 0.0
+  number_of_runs: 1
+  number_of_threads: 4
+  sMax_division: 5
+  sMin_division: 20000
+  spermatheca_size: 2000
+pacsa_algorithm:
+  cf_increase_ratio: 1.002
+  equilibrium_point: 0.999
+  evaporation_factor: 0.2
+  global_based: true
+  insert_heft_initial_solution: false
+  iteration_number: 0
+  iteration_number_based: true
+  number_of_ants: 8
+  number_of_runs: 1
+  temp_decrease_ratio: 0.95
+pso_algorithm:
+  acceleration_coefficient1: 1.2
+  acceleration_coefficient2: 1.2
+  maximum_iteration: 2000
+  number_of_particles: 700
+  number_of_runs: 5
+  weight: 0.9
+sa_algorithm:
+  cooling_factor: 0.999
+  equilibrium_point: 10
+  final_temperature: 0.01
+  force_cooling: true
+  number_of_runs: 48
+  start_temperature: 85
